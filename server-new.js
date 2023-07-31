@@ -7,9 +7,9 @@ app.use(cors())
 app.use(express.json())
 
 // Connect to DB
-const   username = "bippoNew",
-        password = "bippoNew",
-        database = "mern-br"
+const   username = "mern-amazona-user",
+        password = "mern-amazona-user",
+        database = "mern-amazona-app-db"
 
 const mongoose = require("mongoose");
 mongoose.connect(`mongodb+srv://${username}:${password}@cluster1.wofue0i.mongodb.net/${database}?retryWrites=true&w=majority`,{ useNewUrlParser: true , useUnifiedTopology: true },(err)=>{if(err){console.log(err)}else{console.log("successfully connected")}})
